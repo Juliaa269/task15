@@ -32,7 +32,16 @@ class Accordeon {
         });
     }
 
+    //  toggleItem(el) {
+    //     el.classList.toggle(Accordeon.VISIBLE_CLASS);
+    // }
+
+    
     toggleItem(el) {
-        el.classList.toggle(Accordeon.VISIBLE_CLASS);
+        // el.classList.toggle(Accordeon.VISIBLE_CLASS);
+        if (el.classList.contains(Accordeon.VISIBLE_CLASS)) {
+            el.classList.remove(Accordeon.VISIBLE_CLASS);
+        } else
+            el.classList.add(Accordeon.VISIBLE_CLASS)
     }
 }
